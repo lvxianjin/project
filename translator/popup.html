@@ -1,0 +1,29 @@
+<!doctype>
+<html>
+	<head>
+		<script src="myMainAPI.js"></script>
+	</head>
+	<body>
+		<br>
+		<input type="text" name="query" id="query"	>
+		<button id="search">查询</button><br>
+		<br>
+		<div id="result"></div>
+		<br>
+		<div id="loginContainer" style="position:relative;">
+			<canvas id="loginCanvas" style="width:110px;height:70px"></canvas>
+			<div id="loginSuccess" style="display:none;">
+				<label id="user"></label><br><br>
+				<a href="http://www.baidu.com"><button id="myWordsBtn">我的词库</button></a>
+				<button id="logout">注销</button>
+			</div>
+			<div id="loginFail" style="display:none;">
+				用户名：<input type="text" name="username" id="username"><br>
+				密码：&ngsp;<input type="password" name="password" id="password"><br>
+				<button id="login">登录</button>
+				<a href="http://localhost:8080/WordManager/register.jsp" target="_blank"><button id="register">注册</button></a>
+			</div>
+		</div>
+	</body>
+	<script src="popup.js"></script>
+</html>

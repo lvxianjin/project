@@ -1,0 +1,26 @@
+{
+    "name": "translate",
+    "version": "1.0",
+    "description": "A tool designed for translating and managing words",
+    "content_scripts": [
+        {
+          "matches": ["*://*/*"],
+          "js": ["myMainAPI.js","content.js"]
+        }
+    ],
+    "background": {
+        "persistent": false,
+        "scripts": ["myMainAPI.js","md5.min.js","bg.js"]
+    },
+    "browser_action": {
+          "default_popup": "popup.html"        // optional
+    },
+    "permissions" : [
+        "http://api.fanyi.baidu.com",
+        "https://fanyi-api.baidu.com",
+        "http://fanyi.youdao.com",
+        "http://dict-co.iciba.com/api/dictionary.php",
+        "storage"
+    ],
+    "manifest_version": 2
+}
